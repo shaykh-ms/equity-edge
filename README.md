@@ -1,6 +1,6 @@
 # EquityEdge 📈
 
-**EquityEdge** is a dark-themed iOS stock market application built with Swift and SwiftUI. It brings stock quotes, watchlist management, portfolio tracking, and stock search into one mobile experience.
+EquityEdge is an iOS stock market app built with Swift and SwiftUI, focused on presenting market data through a clean, intuitive interface. It combines stock discovery, watchlist management, portfolio tracking, and detailed stock views, with SwiftData for local persistence and a repository-based architecture for organizing data access.
 
 ## 📱 Screenshots
 
@@ -101,4 +101,4 @@ The project separates application setup, domain models, data access, and present
 
 **Mohd Shaya**
 
-Mobile Application Developer | Android · Flutter · iOS Projects
+Mobile Application Developer | Android, iOS & Cross-Platform Development
