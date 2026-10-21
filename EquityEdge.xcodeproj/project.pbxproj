@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		50B787213088A32500D38675 /* Pulse in Frameworks */ = {isa = PBXBuildFile; productRef = 50B787203088A32500D38675 /* Pulse */; };
+		50B787233088A32500D38675 /* PulseProxy in Frameworks */ = {isa = PBXBuildFile; productRef = 50B787223088A32500D38675 /* PulseProxy */; };
+		50B787253088A32500D38675 /* PulseUI in Frameworks */ = {isa = PBXBuildFile; productRef = 50B787243088A32500D38675 /* PulseUI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		50B786D93088995500D38675 /* EquityEdge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EquityEdge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +29,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50B787253088A32500D38675 /* PulseUI in Frameworks */,
+				50B787213088A32500D38675 /* Pulse in Frameworks */,
+				50B787233088A32500D38675 /* PulseProxy in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +74,9 @@
 			);
 			name = EquityEdge;
 			packageProductDependencies = (
+				50B787203088A32500D38675 /* Pulse */,
+				50B787223088A32500D38675 /* PulseProxy */,
+				50B787243088A32500D38675 /* PulseUI */,
 			);
 			productName = EquityEdge;
 			productReference = 50B786D93088995500D38675 /* EquityEdge.app */;
@@ -94,6 +106,9 @@
 			);
 			mainGroup = 50B786D03088995500D38675;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				50B7871F3088A32500D38675 /* XCRemoteSwiftPackageReference "Pulse" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 50B786DA3088995500D38675 /* Products */;
 			projectDirPath = "";
@@ -328,6 +343,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		50B7871F3088A32500D38675 /* XCRemoteSwiftPackageReference "Pulse" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Pulse";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		50B787203088A32500D38675 /* Pulse */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 50B7871F3088A32500D38675 /* XCRemoteSwiftPackageReference "Pulse" */;
+			productName = Pulse;
+		};
+		50B787223088A32500D38675 /* PulseProxy */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 50B7871F3088A32500D38675 /* XCRemoteSwiftPackageReference "Pulse" */;
+			productName = PulseProxy;
+		};
+		50B787243088A32500D38675 /* PulseUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 50B7871F3088A32500D38675 /* XCRemoteSwiftPackageReference "Pulse" */;
+			productName = PulseUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 50B786D13088995500D38675 /* Project object */;
 }
